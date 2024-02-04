@@ -2,16 +2,19 @@
 //  ContentView.swift
 //  a_dinning_app
 //
-//  Created by 陈昱桦 on 2/2/24.
+//  Created by on 2/2/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    struct Place: Hashable {
+    @StateObject var viewModel = DiningViewModel()
+    
+    struct Place: Decodable, Identifiable, Hashable {
+        let id: Int
         let name: String
         let status: String
-        let hours: String
+        let hours: [String]
         let image: String
     }
     
@@ -20,7 +23,7 @@ struct ContentView: View {
         
         var body: some View {
             HStack {
-                Image(place.image)
+                AsyncImage(url: URL(string: place.image)) { image in
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120, height: 80)
@@ -35,26 +38,26 @@ struct ContentView: View {
                     Text(place.name)
                         .font(.headline)
                     
-                    Text(place.hours)
-                        .font(.subheadline)
+//                    Text(place.hours)
+//                        .font(.subheadline)
                 }
             }
         }
     }
     
-    let diningHalls = [
-        Place(name: "1920 Commons", status: "OPEN", hours: "11 - 3 | 5 - 8", image: "image"),
-        Place(name: "Hill College House", status: "CLOSED", hours: "8", image: "image"),
-        Place(name: "English House", status: "CLOSED", hours: "10 - 2 | 5 - 9", image: "image"),
-        Place(name: "Lauder House", status: "OPEN", hours: "11 - 7", image: "image")
-    ]
-    
-    let retailDinings = [
-        Place(name: "1920 Commons", status: "OPEN", hours: "11 - 3 | 5 - 8", image: "image"),
-        Place(name: "Hill College House", status: "CLOSED", hours: "8", image: "image"),
-        Place(name: "English House", status: "CLOSED", hours: "10 - 2 | 5 - 9", image: "image"),
-        Place(name: "Lauder House", status: "OPEN", hours: "11 - 7", image: "image")
-    ]
+//    let diningHalls = [
+//        Place(name: "1920 Commons", status: "OPEN", hours: "11 - 3 | 5 - 8", image: "image"),
+//        Place(name: "Hill College House", status: "CLOSED", hours: "8", image: "image"),
+//        Place(name: "English House", status: "CLOSED", hours: "10 - 2 | 5 - 9", image: "image"),
+//        Place(name: "Lauder House", status: "OPEN", hours: "11 - 7", image: "image")
+//    ]
+//    
+//    let retailDinings = [
+//        Place(name: "1920 Commons", status: "OPEN", hours: "11 - 3 | 5 - 8", image: "image"),
+//        Place(name: "Hill College House", status: "CLOSED", hours: "8", image: "image"),
+//        Place(name: "English House", status: "CLOSED", hours: "10 - 2 | 5 - 9", image: "image"),
+//        Place(name: "Lauder House", status: "OPEN", hours: "11 - 7", image: "image")
+//    ]
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -67,17 +70,21 @@ struct ContentView: View {
                 .font(.system(size: 28, weight: .bold))
                 .padding(.bottom, 12)
 
-            ForEach(diningHalls, id: \.self) { place in
-                Row(place: place)
+//            ForEach(diningHalls, id: \.self) { place in
+//                Row(place: place)
+//            }
+            
+            List(viewModel.diningVenues) { venue in
+                Row(place: venue)
             }
             
             Text("Retail Dining")
                 .font(.system(size: 28, weight: .bold))
                 .padding(.bottom, 12)
             
-            ForEach(retailDinings, id: \.self) { place in
-                Row(place: place)
-            }
+//            ForEach(retailDinings, id: \.self) { place in
+//                Row(place: place)
+//            }
 
         }
         .padding(.horizontal)

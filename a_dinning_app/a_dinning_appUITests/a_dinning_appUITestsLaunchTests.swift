@@ -2,7 +2,7 @@
 //  a_dinning_appUITestsLaunchTests.swift
 //  a_dinning_appUITests
 //
-//  Created by 陈昱桦 on 2/2/24.
+//  Created by on 2/2/24.
 //
 
 import XCTest

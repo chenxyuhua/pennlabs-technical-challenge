@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D7B43B32E86C423FE9275E1 /* Pods_a_dinning_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA58F7587BFF4BCAF40D762B /* Pods_a_dinning_app.framework */; };
+		AB82A5427CCA9850774E3F5E /* Pods_a_dinning_app_a_dinning_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0374B45C33B91C08FF140EB9 /* Pods_a_dinning_app_a_dinning_appUITests.framework */; };
 		BC394C2D2B6D87B10060C01E /* a_dinning_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC394C2C2B6D87B10060C01E /* a_dinning_appApp.swift */; };
-		BC394C2F2B6D87B10060C01E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC394C2E2B6D87B10060C01E /* ContentView.swift */; };
+		BC394C2F2B6D87B10060C01E /* DiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC394C2E2B6D87B10060C01E /* DiningView.swift */; };
 		BC394C312B6D87B30060C01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC394C302B6D87B30060C01E /* Assets.xcassets */; };
 		BC394C342B6D87B30060C01E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC394C332B6D87B30060C01E /* Preview Assets.xcassets */; };
 		BC394C3E2B6D87B30060C01E /* a_dinning_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC394C3D2B6D87B30060C01E /* a_dinning_appTests.swift */; };
 		BC394C482B6D87B30060C01E /* a_dinning_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC394C472B6D87B30060C01E /* a_dinning_appUITests.swift */; };
 		BC394C4A2B6D87B30060C01E /* a_dinning_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC394C492B6D87B30060C01E /* a_dinning_appUITestsLaunchTests.swift */; };
+		BC394C582B6FE91D0060C01E /* DiningAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC394C572B6FE91D0060C01E /* DiningAPI.swift */; };
+		EC2F8738BABCDFDCC7D69C8F /* Pods_a_dinning_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9448E53B9F439E1F716998 /* Pods_a_dinning_appTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A80A2F25F48AB459BBCDE1 /* Pods-a_dinning_app-a_dinning_appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a_dinning_app-a_dinning_appUITests.debug.xcconfig"; path = "Target Support Files/Pods-a_dinning_app-a_dinning_appUITests/Pods-a_dinning_app-a_dinning_appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0374B45C33B91C08FF140EB9 /* Pods_a_dinning_app_a_dinning_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a_dinning_app_a_dinning_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9402895DD2E3C560C7A240 /* Pods-a_dinning_app-a_dinning_appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a_dinning_app-a_dinning_appUITests.release.xcconfig"; path = "Target Support Files/Pods-a_dinning_app-a_dinning_appUITests/Pods-a_dinning_app-a_dinning_appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2C9448E53B9F439E1F716998 /* Pods_a_dinning_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a_dinning_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3B17596F9E2F7C2437DE8B /* Pods-a_dinning_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a_dinning_app.debug.xcconfig"; path = "Target Support Files/Pods-a_dinning_app/Pods-a_dinning_app.debug.xcconfig"; sourceTree = "<group>"; };
+		549B5F6C20E6F9708FD76F98 /* Pods-a_dinning_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a_dinning_app.release.xcconfig"; path = "Target Support Files/Pods-a_dinning_app/Pods-a_dinning_app.release.xcconfig"; sourceTree = "<group>"; };
+		75AF54DB32A1803A11DEDFB9 /* Pods-a_dinning_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a_dinning_appTests.debug.xcconfig"; path = "Target Support Files/Pods-a_dinning_appTests/Pods-a_dinning_appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA58F7587BFF4BCAF40D762B /* Pods_a_dinning_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a_dinning_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC394C292B6D87B10060C01E /* a_dinning_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a_dinning_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC394C2C2B6D87B10060C01E /* a_dinning_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a_dinning_appApp.swift; sourceTree = "<group>"; };
-		BC394C2E2B6D87B10060C01E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC394C2E2B6D87B10060C01E /* DiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningView.swift; sourceTree = "<group>"; };
 		BC394C302B6D87B30060C01E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC394C332B6D87B30060C01E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC394C392B6D87B30060C01E /* a_dinning_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = a_dinning_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +56,8 @@
 		BC394C432B6D87B30060C01E /* a_dinning_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = a_dinning_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC394C472B6D87B30060C01E /* a_dinning_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a_dinning_appUITests.swift; sourceTree = "<group>"; };
 		BC394C492B6D87B30060C01E /* a_dinning_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a_dinning_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC394C572B6FE91D0060C01E /* DiningAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiningAPI.swift; sourceTree = "<group>"; };
+		D6E6FC6B759AC609410AC6FD /* Pods-a_dinning_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a_dinning_appTests.release.xcconfig"; path = "Target Support Files/Pods-a_dinning_appTests/Pods-a_dinning_appTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7B43B32E86C423FE9275E1 /* Pods_a_dinning_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2F8738BABCDFDCC7D69C8F /* Pods_a_dinning_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +81,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB82A5427CCA9850774E3F5E /* Pods_a_dinning_app_a_dinning_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2325B43F6E9232050F14468A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B17596F9E2F7C2437DE8B /* Pods-a_dinning_app.debug.xcconfig */,
+				549B5F6C20E6F9708FD76F98 /* Pods-a_dinning_app.release.xcconfig */,
+				00A80A2F25F48AB459BBCDE1 /* Pods-a_dinning_app-a_dinning_appUITests.debug.xcconfig */,
+				1F9402895DD2E3C560C7A240 /* Pods-a_dinning_app-a_dinning_appUITests.release.xcconfig */,
+				75AF54DB32A1803A11DEDFB9 /* Pods-a_dinning_appTests.debug.xcconfig */,
+				D6E6FC6B759AC609410AC6FD /* Pods-a_dinning_appTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC394C202B6D87B10060C01E = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +108,8 @@
 				BC394C3C2B6D87B30060C01E /* a_dinning_appTests */,
 				BC394C462B6D87B30060C01E /* a_dinning_appUITests */,
 				BC394C2A2B6D87B10060C01E /* Products */,
+				2325B43F6E9232050F14468A /* Pods */,
+				E12A6F0B42CE6C4E4E20BB85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +126,9 @@
 		BC394C2B2B6D87B10060C01E /* a_dinning_app */ = {
 			isa = PBXGroup;
 			children = (
+				BC394C572B6FE91D0060C01E /* DiningAPI.swift */,
 				BC394C2C2B6D87B10060C01E /* a_dinning_appApp.swift */,
-				BC394C2E2B6D87B10060C01E /* ContentView.swift */,
+				BC394C2E2B6D87B10060C01E /* DiningView.swift */,
 				BC394C302B6D87B30060C01E /* Assets.xcassets */,
 				BC394C322B6D87B30060C01E /* Preview Content */,
 			);
@@ -127,6 +160,16 @@
 			path = a_dinning_appUITests;
 			sourceTree = "<group>";
 		};
+		E12A6F0B42CE6C4E4E20BB85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA58F7587BFF4BCAF40D762B /* Pods_a_dinning_app.framework */,
+				0374B45C33B91C08FF140EB9 /* Pods_a_dinning_app_a_dinning_appUITests.framework */,
+				2C9448E53B9F439E1F716998 /* Pods_a_dinning_appTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC394C4D2B6D87B30060C01E /* Build configuration list for PBXNativeTarget "a_dinning_app" */;
 			buildPhases = (
+				6643CC13B77DBA5F54F7C037 /* [CP] Check Pods Manifest.lock */,
 				BC394C252B6D87B10060C01E /* Sources */,
 				BC394C262B6D87B10060C01E /* Frameworks */,
 				BC394C272B6D87B10060C01E /* Resources */,
+				3D40F24DB67B02FF1F3297FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC394C502B6D87B30060C01E /* Build configuration list for PBXNativeTarget "a_dinning_appTests" */;
 			buildPhases = (
+				3327412E43938786FB900CE0 /* [CP] Check Pods Manifest.lock */,
 				BC394C352B6D87B30060C01E /* Sources */,
 				BC394C362B6D87B30060C01E /* Frameworks */,
 				BC394C372B6D87B30060C01E /* Resources */,
@@ -169,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC394C532B6D87B30060C01E /* Build configuration list for PBXNativeTarget "a_dinning_appUITests" */;
 			buildPhases = (
+				BB61030E4CD82304BAA27C0F /* [CP] Check Pods Manifest.lock */,
 				BC394C3F2B6D87B30060C01E /* Sources */,
 				BC394C402B6D87B30060C01E /* Frameworks */,
 				BC394C412B6D87B30060C01E /* Resources */,
+				5618EE2E5F8962ECE2EBDDDC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,12 +300,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3327412E43938786FB900CE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a_dinning_appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D40F24DB67B02FF1F3297FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a_dinning_app/Pods-a_dinning_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a_dinning_app/Pods-a_dinning_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a_dinning_app/Pods-a_dinning_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5618EE2E5F8962ECE2EBDDDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a_dinning_app-a_dinning_appUITests/Pods-a_dinning_app-a_dinning_appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a_dinning_app-a_dinning_appUITests/Pods-a_dinning_app-a_dinning_appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a_dinning_app-a_dinning_appUITests/Pods-a_dinning_app-a_dinning_appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6643CC13B77DBA5F54F7C037 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a_dinning_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB61030E4CD82304BAA27C0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a_dinning_app-a_dinning_appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC394C252B6D87B10060C01E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC394C2F2B6D87B10060C01E /* ContentView.swift in Sources */,
+				BC394C582B6FE91D0060C01E /* DiningAPI.swift in Sources */,
+				BC394C2F2B6D87B10060C01E /* DiningView.swift in Sources */,
 				BC394C2D2B6D87B10060C01E /* a_dinning_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +568,7 @@
 		};
 		BC394C4E2B6D87B30060C01E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C3B17596F9E2F7C2437DE8B /* Pods-a_dinning_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +597,7 @@
 		};
 		BC394C4F2B6D87B30060C01E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 549B5F6C20E6F9708FD76F98 /* Pods-a_dinning_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +626,7 @@
 		};
 		BC394C512B6D87B30060C01E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AF54DB32A1803A11DEDFB9 /* Pods-a_dinning_appTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +646,7 @@
 		};
 		BC394C522B6D87B30060C01E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E6FC6B759AC609410AC6FD /* Pods-a_dinning_appTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +666,7 @@
 		};
 		BC394C542B6D87B30060C01E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A80A2F25F48AB459BBCDE1 /* Pods-a_dinning_app-a_dinning_appUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +684,7 @@
 		};
 		BC394C552B6D87B30060C01E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F9402895DD2E3C560C7A240 /* Pods-a_dinning_app-a_dinning_appUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

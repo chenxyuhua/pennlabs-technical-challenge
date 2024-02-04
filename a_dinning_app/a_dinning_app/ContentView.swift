@@ -8,16 +8,50 @@
 import SwiftUI
 
 struct ContentView: View {
-    struct DiningHall {
+    struct Place: Hashable {
         let name: String
         let status: String
         let hours: String
         let image: String
     }
     
-    let diningHalls = [
-        DiningHall(name: "1920 Commons", status: "OPEN", hours: "11 - 3 | 5 - 8", image: "commons")
+    struct Row: View {
+        let place: Place
+        
+        var body: some View {
+            HStack {
+                Image(place.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 120, height: 80)
+                    .cornerRadius(5)
+                
+                VStack(alignment: .leading) {
+                    Text(place.status)
+                        .foregroundColor(place.status == "OPEN" ? .blue : .gray)
+
+                    Text(place.name)
+                        .font(.headline)
+                    
+                    Text(place.hours)
+                        .font(.subheadline)
+                }
+            }
+        }
+    }
     
+    let diningHalls = [
+        Place(name: "1920 Commons", status: "OPEN", hours: "11 - 3 | 5 - 8", image: "image"),
+        Place(name: "Hill College House", status: "CLOSED", hours: "8", image: "image"),
+        Place(name: "English House", status: "CLOSED", hours: "10 - 2 | 5 - 9", image: "image"),
+        Place(name: "Lauder House", status: "OPEN", hours: "11 - 7", image: "image")
+    ]
+    
+    let retailDinings = [
+        Place(name: "1920 Commons", status: "OPEN", hours: "11 - 3 | 5 - 8", image: "image"),
+        Place(name: "Hill College House", status: "CLOSED", hours: "8", image: "image"),
+        Place(name: "English House", status: "CLOSED", hours: "10 - 2 | 5 - 9", image: "image"),
+        Place(name: "Lauder House", status: "OPEN", hours: "11 - 7", image: "image")
     ]
     
     var body: some View {
@@ -32,8 +66,22 @@ struct ContentView: View {
                 .padding(.bottom, 12)
 
             List {
-                
+                ForEach(diningHalls, id: \.self) { place in
+                    Row(place: place)
+                }
             }
+            .background(.white)
+            
+            Text("Retail Dining")
+                .font(.system(size: 28, weight: .bold))
+                .padding(.bottom, 12)
+            
+            List {
+                ForEach(retailDinings, id: \.self) { place in
+                    Row(place: place)
+                }
+            }
+            .background(.white)
         }
         .padding(.horizontal)
     }

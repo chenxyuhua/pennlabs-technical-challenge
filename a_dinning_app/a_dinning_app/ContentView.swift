@@ -29,6 +29,8 @@ struct ContentView: View {
                 VStack(alignment: .leading) {
                     Text(place.status)
                         .foregroundColor(place.status == "OPEN" ? .blue : .gray)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    
 
                     Text(place.name)
                         .font(.headline)
@@ -65,23 +67,18 @@ struct ContentView: View {
                 .font(.system(size: 28, weight: .bold))
                 .padding(.bottom, 12)
 
-            List {
-                ForEach(diningHalls, id: \.self) { place in
-                    Row(place: place)
-                }
+            ForEach(diningHalls, id: \.self) { place in
+                Row(place: place)
             }
-            .background(.white)
             
             Text("Retail Dining")
                 .font(.system(size: 28, weight: .bold))
                 .padding(.bottom, 12)
             
-            List {
-                ForEach(retailDinings, id: \.self) { place in
-                    Row(place: place)
-                }
+            ForEach(retailDinings, id: \.self) { place in
+                Row(place: place)
             }
-            .background(.white)
+
         }
         .padding(.horizontal)
     }
